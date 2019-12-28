@@ -1,0 +1,30 @@
+package hr;
+
+import java.util.Stack;
+
+public class LargestRectangle {
+
+	static long largestRectangle(int[] h) {
+		
+		Stack<Integer> stack= new Stack<Integer>();
+		long height=0;
+		for(int i=0;i<h.length;i++) {
+			if(!stack.isEmpty()) {
+				if(h[stack.peek()]<h[i]) {
+					stack.push(i);
+				}else {
+					
+				}
+			}else {
+				stack.push(i);
+			}
+		}
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(largestRectangle(new int[] {1,2,3,4,5}));
+	}
+
+}

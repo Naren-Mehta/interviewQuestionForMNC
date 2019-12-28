@@ -1,0 +1,16 @@
+package goldmanSachs;
+
+public class FIndMinimumNumber {
+
+	public static void main(String[] args) {
+
+		System.out.println(findMinimumNumber("M"));
+		
+	}
+
+	private static char[] findMinimumNumber(String string) {
+		return null;
+	}
+	
+
+}

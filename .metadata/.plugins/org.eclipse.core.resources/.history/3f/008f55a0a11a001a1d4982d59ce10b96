@@ -1,0 +1,7 @@
+package threadExecutor;
+
+public class ThreadExecutorDemo3 {
+	public static void main(String[] args) {
+		
+	}
+}

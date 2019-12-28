@@ -1,0 +1,17 @@
+package zebra;
+
+public class TryCatchDemo {
+
+	public static int test() {
+		try {
+
+		} catch (Exception e) {
+		} finally {
+
+		}
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

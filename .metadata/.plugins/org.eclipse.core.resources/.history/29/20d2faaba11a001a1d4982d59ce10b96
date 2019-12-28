@@ -1,0 +1,12 @@
+package threadExecutor;
+
+import java.util.concurrent.Callable;
+
+class MyCallable implements Callable
+
+public class ThreadExecutorDemo3 {
+	public static void main(String[] args) {
+		
+	}
+}
+

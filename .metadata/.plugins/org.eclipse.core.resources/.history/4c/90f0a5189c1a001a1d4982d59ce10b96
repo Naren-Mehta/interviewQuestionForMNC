@@ -1,0 +1,14 @@
+package threadExecutor;
+
+
+class MyJob{
+	int[] arr;
+	
+	public MyJob(int[] arr) {
+		this.arr=arr;
+	}
+}
+
+public class ThreadExecutorDemo {
+
+}

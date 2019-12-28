@@ -1,0 +1,53 @@
+package goldmanSachs;
+
+import java.util.ArrayList;
+
+public class FIndMinimumNumber {
+
+	public static void main(String[] args) {
+
+		System.out.println(findMinimumNumber("MM"));
+		
+	}
+
+	private static int findMinimumNumber(String str) {
+		
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		if(str==null ||str.isEmpty()) {
+			return -1;
+		}
+		
+		int currentValueOfN=0;
+		
+		if(str.charAt(0) == 'M') {
+			list.add(2);
+			list.add(1);
+			currentValueOfN=3;
+		}else if(str.charAt(0) == 'N') {
+			list.add(1);
+			list.add(2);
+			currentValueOfN=3;
+		}else {
+			return -1;
+		}
+		
+		for(int i=1;i<str.length();i++) {
+			if(str.charAt(0) == 'M') {
+				list.add(currentValueOfN);
+			}else if(str.charAt(0) == 'N') {
+				list.add(currentValueOfN);
+				currentValueOfN++;
+			}else {
+				return -1;
+			}
+		}
+		
+		String number="";
+		for(int i:list) {
+			number=number+i;
+		}
+		return Integer.parseInt(number);
+	}
+	
+
+}

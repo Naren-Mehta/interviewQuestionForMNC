@@ -1,0 +1,9 @@
+package niyo;
+
+public class SumOfNumbersFromString {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package brillio;
+
+public class PingPong implements Runnable {
+
+	public static int turn=1;
+	private String name;
+	
+	
+	public PrintInOrder() {
+	    this.valueToPrint = -1;
+	}
+	
+	@Override
+	public void run() {
+		
+		while(true) {
+			if(turn == this.id) {
+				
+			}
+		}
+		
+	}
+
+}

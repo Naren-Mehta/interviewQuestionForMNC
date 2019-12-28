@@ -1,0 +1,27 @@
+package perfois;
+
+public class FindStringWithInOtherString {
+
+	public static int findIndex(String str1, String str2, int I, char K) {
+
+		switch (K) {
+		case 'Y':
+			str1.substring(I).contains(" "+str2+" ");
+			break;
+
+		case 'N':
+
+			break;
+
+		default:
+			break;
+		}
+
+		return -1;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(findIndex("This is hackers for hackersearth", "hackers", 0, 'Y'));
+	}
+
+}

@@ -1,0 +1,29 @@
+package goldmanSachs;
+
+public class FIndMinimumNumber {
+
+	public static void main(String[] args) {
+
+		System.out.println(findMinimumNumber("Mc"));
+		
+	}
+
+	private static int findMinimumNumber(String str) {
+		
+		
+		if(str==null ||str.isEmpty()) {
+			return -1;
+		}
+		
+		if(str.charAt(0) == 'M') {
+			
+		}else if(str.charAt(0) == 'N') {
+			
+		}else {
+			
+		}
+		return 0;
+	}
+	
+
+}

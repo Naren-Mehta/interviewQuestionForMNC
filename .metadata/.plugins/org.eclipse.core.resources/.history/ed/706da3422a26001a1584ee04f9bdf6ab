@@ -1,0 +1,13 @@
+package perfois;
+
+import java.util.HashMap;
+
+public class EmployHirachary {
+
+	public static void main(String[] args) {
+		
+		HashMap<Character, Character> hm = new HashMap<Character, Character>();
+		
+	}
+
+}

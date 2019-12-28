@@ -1,0 +1,45 @@
+package niyoInterviewQuestions;
+
+import java.util.HashMap;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+
+		String str = "a1b2c345d56a44d33e667c40";
+
+		char[] arr = str.toCharArray();
+
+		HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+
+		for (int i = 0; i < arr.length; i++) {
+			int sum = 0;
+
+			if (!Character.isDigit(arr[i])) {
+
+				char key = arr[i];
+				while ((i + 1 < arr.length) && Character.isDigit(arr[i + 1])) {
+					int val=Character.getNumericValue(arr[i+1]);
+					sum = sum + val;
+					i++;
+				}
+
+				if (!hm.containsKey(key)) {
+					hm.put(key, sum);
+				} else {
+					Integer value = hm.get(key);
+					hm.put(key, value + sum);
+				}
+
+				System.out.println(hm);
+				System.out.println();
+
+			}
+
+		}
+
+		System.out.println(hm);
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package threadExecutor;
+
+import java.util.concurrent.Callable;
+
+class MyCallable implements Callable {
+
+	int num;
+
+	public MyCallable(int num) {
+		this.num = num;
+	}
+
+	@Override
+	public Object call() throws Exception {
+
+		System.out.println(Thread.currentThread().getName() + " is responsible to get sum of " + num + " numbers");
+		Integer sum=0;
+		for(int i=1;i<=num;i++) {
+			re
+		}
+		
+		return null;
+	}
+
+}
+
+public class ThreadExecutorDemo3 {
+	public static void main(String[] args) {
+
+	}
+}

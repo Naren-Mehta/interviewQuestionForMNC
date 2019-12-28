@@ -1,0 +1,19 @@
+package threadRevision.threadLocal;
+
+import java.sql.Date;
+
+public class UserService {
+
+	public static void main(String[] args) {
+
+		System.out.println(birthDate(10));
+		
+		
+	}
+	
+	public static String birthDate(int userId) {
+		System.out.println((int)Math.random()*10);
+		return ""+(int)Math.random()*10;
+	}
+
+}

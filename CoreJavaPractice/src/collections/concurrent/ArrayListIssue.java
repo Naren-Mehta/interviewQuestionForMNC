@@ -1,0 +1,62 @@
+package collections.concurrent;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class ArrayListIssue {
+	public static void main(String[] args) {
+
+		List<String> arr = new ArrayList<String>();
+		arr.add("Apple");
+		arr.add("Boy");
+		arr.add("Cat");
+		arr.add("Dog");
+
+//		Runnable r = () -> {
+//			System.out.println("Inside run method===>");
+//			try {
+//				Thread.sleep(1000);
+//				arr.add("Elephant");
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//		};
+
+		// Thread annonymous
+		new Thread() {
+
+			public void run() {
+				System.out.println("Inside Thread class run method");
+				try {
+					arr.add("Elephant");
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}.start();
+
+//		arr.forEach(a -> {
+//			try {
+//				System.out.println(a);
+//				Thread.sleep(5000);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//		});
+
+		Iterator i = arr.iterator();
+		while (i.hasNext()) {
+			System.out.println(i.next());
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+		}
+
+	}
+}

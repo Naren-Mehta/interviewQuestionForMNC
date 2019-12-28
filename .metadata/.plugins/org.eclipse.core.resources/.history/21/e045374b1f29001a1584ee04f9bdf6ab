@@ -1,0 +1,9 @@
+package leetCode.string;
+
+public class SplitAString {
+
+	public static void main(String[] args) {
+
+	}
+
+}

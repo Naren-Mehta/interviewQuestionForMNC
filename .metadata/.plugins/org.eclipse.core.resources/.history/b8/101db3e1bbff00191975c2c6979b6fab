@@ -1,0 +1,18 @@
+package threadExecuter;
+
+public class MultipleThreadWithExecuterDemo {
+
+	public static void main(String[] args) {
+		System.out.println("Inside: "+Thread.currentThread().getName());
+		
+		Runnable task1 =()->{
+			System.out.println(" Task1 "+Thread.currentThread().getName());
+		};
+		
+		Runnable task2 =()->{
+			System.out.println(" Task2 "+Thread.currentThread().getName());
+		}
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package niyo;
+
+public class SumOfNumbersFromString {
+
+	public static void main(String[] args) {
+		
+		String str="a1b2c3a111b222c333";
+		
+	}
+
+}

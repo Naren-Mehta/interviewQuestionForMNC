@@ -1,0 +1,13 @@
+package hr;
+
+public class MinMaxRiddle {
+
+	static long[] riddle(long[] arr) {
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

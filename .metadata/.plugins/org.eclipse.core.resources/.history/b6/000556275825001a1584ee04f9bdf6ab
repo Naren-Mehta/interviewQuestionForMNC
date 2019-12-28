@@ -1,0 +1,11 @@
+package goldmanSachs;
+
+import java.sql.Date;
+
+public class DateIssue {
+	public static void main(String[] args) {
+		
+		Date date = new Date(new java.util.Date());
+		System.out.println(date);
+	}
+}

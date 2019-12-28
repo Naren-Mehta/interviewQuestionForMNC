@@ -1,0 +1,44 @@
+package niyo;
+
+import java.util.HashMap;
+
+public class SumOfNumbersFromString {
+
+	public static void main(String[] args) {
+		
+		String str="a1b2c3a111b222c333";
+		
+		char[] arr= str.toCharArray();
+		
+		HashMap<Character, Integer> hm= new HashMap<Character, Integer>();
+		
+		for(int i=0;i<arr.length;i++) {
+			
+			char val= arr[i];
+			
+			if(Character.isDigit(val)) {
+				
+				System.out.println("======if===="+val);
+				while() {
+					
+				}
+				
+				
+			}else {
+				System.out.println("======else===="+val);
+
+				if(hm.containsKey(val)) {
+					
+				}else {
+					hm.put(val, 0);
+				}
+			}
+			
+			
+		}
+		
+		System.out.println(hm);
+		
+	}
+
+}

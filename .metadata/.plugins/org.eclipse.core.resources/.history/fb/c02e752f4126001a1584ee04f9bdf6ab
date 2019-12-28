@@ -1,0 +1,9 @@
+package perfois;
+
+public class FindStringWithInOtherString {
+
+	public static void main(String[] args) {
+
+	}
+
+}

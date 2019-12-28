@@ -1,0 +1,19 @@
+package hr;
+
+public class MinMaxRiddle {
+
+	static long[] riddle(long[] arr) {
+
+		long[] newArr=new long[arr.length];
+		
+		return 
+		
+	}
+
+	public static void main(String[] args) {
+
+		long[] arr= riddle(new long[] {1,2,3,5,1,13,3});
+		
+	}
+
+}

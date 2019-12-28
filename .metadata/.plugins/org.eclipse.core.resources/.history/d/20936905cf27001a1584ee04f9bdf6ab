@@ -1,0 +1,25 @@
+package homeChallanges.reverseInteger;
+
+public class ReverseInteger {
+	
+	public static void main(String[] args) {
+		
+		System.out.println(reverseInteger(+999951));
+		
+		
+	}
+
+	private static int reverseInteger(int i) {
+		
+		String str=i+"";
+		
+		if(str.charAt(0) == '-' || str.charAt(0)=='+') {
+			str=str.charAt(0)+ new StringBuffer(str.substring(1)).reverse().toString();
+		}else {
+			str=new StringBuffer(str).reverse().toString();
+		}
+		
+		return Integer.parseInt(str);
+	}
+
+}

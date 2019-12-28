@@ -1,0 +1,10 @@
+package goldmanSachs;
+
+import java.sql.Date;
+
+public class DateIssue {
+	public static void main(String[] args) {
+		
+		System.out.println(new Date());
+	}
+}

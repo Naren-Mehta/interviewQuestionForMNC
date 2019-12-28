@@ -1,0 +1,23 @@
+package fidelity;
+
+public class OddEven implements Runnable{
+
+	int count=0;
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+	@Override
+	public void run() {
+		
+		synchronized (this) {
+//			if() {
+//				
+//			}
+		}
+		
+	}
+
+}

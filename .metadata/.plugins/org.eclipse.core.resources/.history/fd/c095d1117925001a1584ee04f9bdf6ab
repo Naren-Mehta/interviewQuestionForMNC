@@ -1,0 +1,46 @@
+package brillio;
+
+public class ThreadSequence implements Runnable {
+
+	public static void main(String[] args) {
+
+		ThreadSequence r= new ThreadSequence();
+		
+		Thread t1 = new Thread(r);
+		Thread t2 = new Thread(r);
+		Thread t3 = new Thread(r);
+
+		
+		
+		try {
+			t1.start();
+			t1.join();
+			
+			t2.start();
+			t1.join();
+
+			t3.start();
+			t1.join();
+
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+	}
+
+	@Override
+	public void run() {
+		
+//		while(true) {
+//			
+//		}
+		System.out.println(Thread.currentThread().getName());
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package perfois;
+
+public class FindStringWithInOtherString {
+
+	public static int findIndex(String str1, String str2, int I, char K) {
+		
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(findIndex("This is hackers for hackersearth","hackers",0,'Y'));
+	}
+
+}

@@ -1,0 +1,25 @@
+package vmware;
+
+import java.util.HashMap;
+
+public class AnagramDemo {
+
+	public static void main(String[] args) {
+		
+		String s1= "abcde";
+		String s2= "edcba";
+		
+		HashMap<Character, Integer> m1= new HashMap<Character, Integer>();
+		HashMap<Character, Integer> m2= new HashMap<Character, Integer>();
+		
+		for(int i=0;i<s1.length();i++) {
+			m1.put(s1.charAt(i), 0);
+		}
+		
+		for(int i=0;i<s1.length();i++) {
+			m1.put(s1.charAt(i), 0);
+		}
+
+	}
+
+}

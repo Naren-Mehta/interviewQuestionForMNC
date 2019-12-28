@@ -1,0 +1,18 @@
+package threadRevision.threadLocal;
+
+import java.sql.Date;
+
+public class UserService {
+
+	public static void main(String[] args) {
+
+		
+		
+		
+	}
+	
+	public String birthDate(int userId) {
+		return (int)Math.random()*10;
+	}
+
+}

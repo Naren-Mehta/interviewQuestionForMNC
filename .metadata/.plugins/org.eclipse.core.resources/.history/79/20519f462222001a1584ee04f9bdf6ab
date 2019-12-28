@@ -1,0 +1,35 @@
+package vmware;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class AnagramDemo3 {
+
+	public static String sortString(String str) {
+		
+		char[] arr= str.toCharArray();
+		Arrays.sort(arr);
+		str=String.copyValueOf(arr);
+		return str;
+
+	}
+	
+	public static void main(String[] args) {
+		
+		String s2= "this is naren neran binary nibary adobe abode";
+		
+		String[] strArr= s2.split(" ");
+		
+		
+		s1=String.copyValueOf(arr1);
+		s2=String.copyValueOf(arr2);
+		
+		System.out.println(s1.equals(s2));
+
+				
+		
+
+	}
+
+}

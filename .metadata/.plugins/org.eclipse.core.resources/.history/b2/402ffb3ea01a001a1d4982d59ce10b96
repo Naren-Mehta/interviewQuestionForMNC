@@ -1,0 +1,23 @@
+package threadExecutor;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+class Task implements Runnable{
+
+	@Override
+	public void run() {
+		System.out.println("Perform Task "+Thread.currentThread().getName());
+	}
+	
+}
+
+public class ThreadExecutorDemo2 {
+	public static void main(String[] args) {
+
+		int count = Runtime.getRuntime().availableProcessors();
+		System.out.println(count);
+		
+		ExecutorService service = Executors.newCachedThreadPool(20);
+	}
+}

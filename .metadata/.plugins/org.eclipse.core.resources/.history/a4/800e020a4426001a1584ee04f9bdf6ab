@@ -1,0 +1,19 @@
+package goldmanSachs;
+
+import java.util.ArrayList;
+
+public class FIndMinimumNumber2 {
+
+	public static void main(String[] args) {
+
+		System.out.println(findMinimumNumber("MNMM"));
+
+	}
+
+	private static int findMinimumNumber(String str) {
+
+		return 0;
+
+	}
+
+}

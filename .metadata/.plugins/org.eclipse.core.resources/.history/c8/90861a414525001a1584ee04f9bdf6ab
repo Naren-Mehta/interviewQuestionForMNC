@@ -1,0 +1,33 @@
+package goldmanSachs;
+
+import java.util.ArrayList;
+
+public class FIndMinimumNumber {
+
+	public static void main(String[] args) {
+
+		System.out.println(findMinimumNumber("Mc"));
+		
+	}
+
+	private static int findMinimumNumber(String str) {
+		
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		if(str==null ||str.isEmpty()) {
+			return -1;
+		}
+		
+		if(str.charAt(0) == 'M') {
+			list.add(2);
+		}else if(str.charAt(0) == 'N') {
+			
+		}else {
+			
+		}
+		
+		
+		return 0;
+	}
+	
+
+}

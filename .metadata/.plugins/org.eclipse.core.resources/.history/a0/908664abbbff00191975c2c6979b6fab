@@ -1,0 +1,9 @@
+package threadExecuter;
+
+public class MultipleThreadWithExecuterDemo {
+
+	public static void main(String[] args) {
+
+	}
+
+}

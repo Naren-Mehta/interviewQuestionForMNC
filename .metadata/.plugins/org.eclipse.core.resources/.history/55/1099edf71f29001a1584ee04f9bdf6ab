@@ -1,0 +1,13 @@
+package zebra;
+
+public class SumOfNaturalNumber {
+
+	public static void main(String[] args) {
+
+		// Sum of 1000 number via java 8
+		
+		
+		
+	}
+
+}

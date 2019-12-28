@@ -1,0 +1,23 @@
+package homeChallanges.reverseInteger;
+
+public class ReverseInteger2 {
+	
+	public static void main(String[] args) {
+		
+		System.out.println(reverseInteger(-999951));
+		
+		
+	}
+
+	private static int reverseInteger(int i) {
+		
+		boolean isNegative=i<0 ? true:false;
+		
+		i= Integer.parseInt(new StringBuffer(Math.abs(i)+"").toString());
+		
+		i= isNegative ? i*-1 : i;
+		
+		return Integer.parseInt(str);
+	}
+
+}

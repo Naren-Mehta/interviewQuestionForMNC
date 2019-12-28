@@ -1,0 +1,13 @@
+package perfois;
+
+public class CompleteString {
+	public static void main(String[] args) {
+		String str = "qwertyuioplkjhgfdsazxcvbnm";
+		
+		for(int i=97;i<=122;i++) {
+			if(str.charAt(i)) {
+				
+			}
+		}
+	}
+}

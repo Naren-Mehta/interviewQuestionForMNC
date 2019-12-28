@@ -1,0 +1,45 @@
+package brillio;
+
+public class ThreadSequence2 implements Runnable {
+
+	private int valueToPrint;
+	private int id;
+	private static int turn = 1;
+	private static int RESET_TURN_THRESHOLD = 3;
+
+	ThreadSequence2(int id, int val) {
+		this.id = id;
+		this.valueToPrint = val;
+	}
+
+	public static void main(String[] args) {
+
+		ThreadSequence2 r = new ThreadSequence2();
+
+		Thread t1 = new Thread(r);
+		Thread t2 = new Thread(r);
+		Thread t3 = new Thread(r);
+
+		try {
+			t1.start();
+			t1.join();
+
+			t2.start();
+			t2.join();
+
+			t3.start();
+			t3.join();
+
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void run() {
+		System.out.println(Thread.currentThread().getName());
+	}
+
+}

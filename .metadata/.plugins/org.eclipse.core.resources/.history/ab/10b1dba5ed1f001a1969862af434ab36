@@ -1,0 +1,32 @@
+package fidelity;
+
+public class OddEven implements Runnable {
+
+	int count = 0;
+
+	public static void main(String[] args) {
+
+		OddEven r= new OddEven();
+		
+		Thread t1= new Thread(r);
+		Thread t2= new Thread(r);
+
+		
+	}
+
+	@Override
+	public void run() {
+
+		synchronized (this) {
+			System.out.println("====COunt=====" + count);
+			if (count % 2 == 0) {
+				System.out.println(count + "====even====");
+			} else {
+				System.out.println(count + "====odd====");
+			}
+			count++;
+		}
+
+	}
+
+}

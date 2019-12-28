@@ -1,0 +1,9 @@
+package threadExecuter;
+
+public class MultipleThreadWithExecuterDemo {
+
+	public static void main(String[] args) {
+		System.out.println("Inside: "+Thread.currentThread().getName());
+	}
+
+}

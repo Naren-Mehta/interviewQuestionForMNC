@@ -1,0 +1,36 @@
+package threadExecutor;
+
+import java.util.concurrent.Callable;
+
+class MyJob implements Callable{
+	int[] arr;
+
+	public MyJob(int[] arr) {
+		this.arr = arr;
+	}
+
+	@Override
+	public Object call() throws Exception {
+		Integer sum = 0;
+		for (int i : arr) {
+			sum = sum + i;
+		}
+
+		System.out.println(sum);
+		return sum;
+	}
+}
+
+public class ThreadExecutorDemo {
+	public static void main(String[] args) {
+		
+		MyJob[] jobArr = {new MyJob(new int[] {10,20}), new MyJob(new int[] {100,200})};
+		
+		
+		
+		
+		t1.start();
+		t2.start();
+
+	}
+}

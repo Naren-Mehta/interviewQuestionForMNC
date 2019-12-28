@@ -1,0 +1,34 @@
+package perfois;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class EmployHirachary {
+
+	public static void main(String[] args) {
+		
+		HashMap<Character, Character> hm = new HashMap<Character, Character>();
+		
+		hm.put('A','C');
+		hm.put('B','C');
+		hm.put('C','D');
+		hm.put('D','F');
+		hm.put('E','F');
+
+		System.out.println(hm);
+		
+		HashMap<Character, Integer> hm1= new HashMap<Character, Integer>();
+		
+		Set<Character> set=hm.keySet();
+		
+		for(Character c: set) {
+			if(hm.containsValue(c)) {
+				
+			}
+		}
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+package hr;
+
+public class FindMissingNo {
+	public static void main(String[] args) {
+		int[] arr=new int[9998];
+		for(int i=0;i<arr.length;i++) {
+				arr[i]=i+1;
+		}
+		
+//		for(int i: arr) {
+//			
+//			if(i==0) {
+//				System.out.println(i);
+//
+//			}
+//		}
+////		
+		System.out.println(arr.length);
+		int n=arr.length+2;
+		int sum = (n *(arr.length+1)) /2;
+		System.out.println(sum);
+		
+		
+		for(int i=0;i<arr.length;i++) {
+			sum=sum-arr[i];
+		}
+		
+		System.out.println(sum);
+		
+	    int avg = (sum / 2); 
+	    
+	    System.out.println(avg);
+	    
+	    
+	}
+}

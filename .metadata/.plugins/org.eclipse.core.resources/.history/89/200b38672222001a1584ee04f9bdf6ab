@@ -1,0 +1,39 @@
+package vmware;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
+public class AnagramDemo3 {
+
+	public static String sortString(String str) {
+		
+		char[] arr= str.toCharArray();
+		Arrays.sort(arr);
+		str=String.copyValueOf(arr);
+		return str;
+
+	}
+	
+	public static void main(String[] args) {
+		
+		String s2= "this is a naren neran binary nibary adobe abode";
+		
+		String[] strArr= s2.split(" ");
+		
+		HashMap<String, List<String>>
+		for(int i=0;i<strArr.length;i++) {
+			
+			if(strArr[i].length() >1) {
+				
+			}
+			
+		}
+
+				
+		
+
+	}
+
+}

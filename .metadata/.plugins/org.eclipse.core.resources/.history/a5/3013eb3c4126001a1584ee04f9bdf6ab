@@ -1,0 +1,13 @@
+package perfois;
+
+public class FindStringWithInOtherString {
+
+	public static int findIndex() {
+		
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(findIndex());
+	}
+
+}

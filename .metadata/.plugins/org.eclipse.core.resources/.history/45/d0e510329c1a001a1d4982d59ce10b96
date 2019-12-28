@@ -1,0 +1,25 @@
+package threadExecutor;
+
+
+class MyJob implements Runnable{
+	int[] arr;
+	
+	public MyJob(int[] arr) {
+		this.arr=arr;
+	}
+
+	@Override
+	public void run() {
+		
+		int sum=0;
+		for(int i: arr) {
+			sum=sum+i;
+		}
+		
+		System.out.println(i);
+	}
+}
+
+public class ThreadExecutorDemo {
+
+}

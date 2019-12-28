@@ -1,0 +1,14 @@
+package threadExecutor;
+
+
+class MyJob implements Runnable{
+	int[] arr;
+	
+	public MyJob(int[] arr) {
+		this.arr=arr;
+	}
+}
+
+public class ThreadExecutorDemo {
+
+}

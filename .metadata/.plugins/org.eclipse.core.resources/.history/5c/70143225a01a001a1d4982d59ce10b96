@@ -1,0 +1,10 @@
+package threadExecutor;
+
+public class ThreadExecutorDemo2 {
+	public static void main(String[] args) {
+
+		int count = Runtime.getRuntime().availableProcessors();
+
+		System.out.println(count);
+	}
+}

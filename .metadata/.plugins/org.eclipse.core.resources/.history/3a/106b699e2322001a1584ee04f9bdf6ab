@@ -1,0 +1,40 @@
+package vmware;
+
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class AnagramDemo {
+
+	public static void main(String[] args) {
+		
+		String s1= "abcderrxxyy";
+		String s2= "rredcbayyxx";
+		
+		HashMap<Character, Integer> m1= new HashMap<Character, Integer>();
+		HashMap<Character, Integer> m2= new HashMap<Character, Integer>();
+		
+		int length=s1.length();
+		
+		for(int i=0;i<length;i++) {
+			
+			if(m1.containsKey(s1.charAt(i))) {
+				int value= m1.get(s1.charAt(i));
+				m1.put(s1.charAt(i), value+1);
+
+			}else {
+				m1.put(s1.charAt(i), 1);
+			}
+			
+			if(m2.containsKey(s2.charAt(i))) {
+				int value= m2.get(s2.charAt(i));
+				m2.put(s2.charAt(i), value+1);
+
+			}else {
+				m2.put(s2.charAt(i), 1);
+			}
+		}
+		
+		System.out.println(m1.equals(m2));
+	}
+
+}

@@ -1,0 +1,16 @@
+package perfois;
+
+public class SortUrl {
+
+	public static void main(String[] args) {
+
+		String[] arr= {
+			"https://hackersearth.com",
+			"https://wikipidia.com",
+			"https://google.com",
+			"https://hackersearth.com"
+		};
+		
+	}
+
+}

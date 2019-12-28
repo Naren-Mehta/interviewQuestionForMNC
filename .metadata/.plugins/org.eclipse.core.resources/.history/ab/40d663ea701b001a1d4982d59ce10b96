@@ -1,0 +1,12 @@
+package collections.concurrent;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class IterateList {
+
+	public static void main(String[] args) {
+		List<String> arr= new ArrayList<String>();
+	}
+
+}

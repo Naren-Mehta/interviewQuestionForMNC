@@ -1,0 +1,52 @@
+package fidelity;
+
+public class PingPongThreadDemo implements Runnable {
+
+	String name = "Ping";
+	int count = 0;
+
+	public void run() {
+		while (true) {
+			synchronized (this) {
+				playTurn();
+
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+	public void playTurn() {
+		try {
+
+			if (name.equals("Ping")) {
+				System.out.println("====if==========" + count);
+				System.out.println("Ping");
+
+			} else {
+				System.out.println("====else==========" + count);
+				System.out.println("Pong");
+			}
+			count++;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	
+	public static void main(String[] args) {
+
+		PingPongThreadDemo r = new PingPongThreadDemo();
+		Thread t1 = new Thread(r);
+		Thread t2 = new Thread(r);
+
+		t1.start();
+		t2.start();
+
+	}
+
+}

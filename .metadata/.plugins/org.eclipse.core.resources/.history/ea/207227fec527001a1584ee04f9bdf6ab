@@ -1,0 +1,20 @@
+package homeChallanges.string;
+
+import java.util.Arrays;
+
+public class StringReverse1 {
+
+	public static String reverse(String str) {
+		
+		StringBuffer f= new StringBuffer(str);
+		return f.reverse().toString();
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(reverse("narendra"));
+		
+		
+	}
+
+}

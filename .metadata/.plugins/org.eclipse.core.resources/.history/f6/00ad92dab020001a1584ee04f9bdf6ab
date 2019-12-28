@@ -1,0 +1,39 @@
+package hr;
+
+public class FindMissingNo {
+	public static void main(String[] args) {
+		int[] arr = new int[] {1,2,4,6};
+		System.out.println(arr.length);
+		int n = arr.length + 2;
+		int sum = (n * (n + 1)) / 2;
+		System.out.println(sum);
+
+		for (int i = 0; i < arr.length; i++) {
+			sum = sum - arr[i];
+		}
+
+		System.out.println("======"+sum);
+
+		int avg = (sum / 2);
+
+		System.out.println("Avg==="+avg);
+
+		int sumSmallerHalf = 0;
+		int sumGreaterHalf = 0;
+
+		for (int i = 0; i < n - 2; i++) {
+			if (arr[i] <= avg)
+				sumSmallerHalf += arr[i];
+			else
+				sumGreaterHalf += arr[i];
+		}
+
+		System.out.println("Two Missing " + "Numbers are");
+
+		int totalSmallerHalf = (avg * (avg + 1)) / 2;
+		System.out.println(totalSmallerHalf - sumSmallerHalf);
+
+		System.out.println(((n * (n + 1)) / 2 - totalSmallerHalf) - sumGreaterHalf);
+
+	}
+}

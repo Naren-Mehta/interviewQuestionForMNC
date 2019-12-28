@@ -1,0 +1,28 @@
+package collections.concurrent;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+public class HashMapIssues {
+	public static void main(String[] args) {
+
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("A", "Apple");
+		hm.put("B", "Boy");
+		hm.put("C", "Cat");
+		hm.put("D", "Dog");
+
+		Runnable r = () -> {
+			
+		};
+		
+		Set s= hm.entrySet();
+		Iterator i= s.iterator();
+		
+		while(i.hasNext()) {
+			
+		}
+
+	}
+}

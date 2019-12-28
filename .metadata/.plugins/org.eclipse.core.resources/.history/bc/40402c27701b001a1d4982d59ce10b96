@@ -1,0 +1,25 @@
+package collections.concurrent;
+
+import java.io.Console;
+import java.util.HashMap;
+import java.util.Map;
+
+public class IterateMap {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("A", "Apple");
+		hm.put("B", "Boy");
+		hm.put("C", "Cat");
+		hm.put("D", "Dog");
+		
+		//1st way
+		
+		for(Map.Entry<String, String> entry : hm.entrySet()) {
+			System.out.println(entry.getKey() +" "+entry.getValue());
+		}
+		
+	}
+
+}

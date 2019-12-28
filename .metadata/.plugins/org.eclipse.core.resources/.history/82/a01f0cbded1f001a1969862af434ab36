@@ -1,0 +1,29 @@
+package fidelity;
+
+public class OddEven implements Runnable {
+
+	int count = 0;
+
+	public static void main(String[] args) {
+
+		OddEven r= new OddEven();
+		
+		Thread t1= new Thread(r);
+		Thread t2= new Thread(r);
+		t1.start();
+		t2.start();
+
+		
+	}
+
+	@Override
+	public void run() {
+
+		while(true) {
+			
+		}
+		
+
+	}
+
+}

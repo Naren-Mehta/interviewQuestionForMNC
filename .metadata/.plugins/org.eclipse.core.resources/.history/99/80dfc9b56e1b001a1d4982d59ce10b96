@@ -1,0 +1,16 @@
+package collections.concurrent;
+
+import java.util.HashMap;
+
+public class HashMapIssues {
+	public static void main(String[] args) {
+		
+		HashMap<String, String> hm= new HashMap<String, String>()
+		
+		Runnable r = ()->{
+				
+			};
+			
+			
+	}
+}

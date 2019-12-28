@@ -1,0 +1,13 @@
+package leetCode.string;
+
+public class SplitAString {
+	
+	 public int balancedStringSplit(String s) {
+	        
+	    }
+
+	public static void main(String[] args) {
+		System.out.println(balancedStringSplit());
+	}
+
+}

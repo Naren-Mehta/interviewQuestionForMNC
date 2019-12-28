@@ -1,0 +1,8 @@
+package perfois;
+
+public class CompleteString {
+	public static void main(String[] args) {
+		String str = "qwertyuioplkjhgfdsazxcvbnm";
+		System.out.println(str.length());
+	}
+}

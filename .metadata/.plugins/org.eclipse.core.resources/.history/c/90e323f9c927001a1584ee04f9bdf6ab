@@ -1,0 +1,14 @@
+package homeChallanges.palindrome;
+
+public class Palindrome {
+
+	
+	public static boolean isPalindrom() {
+
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

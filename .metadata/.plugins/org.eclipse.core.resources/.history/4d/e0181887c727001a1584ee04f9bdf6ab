@@ -1,0 +1,27 @@
+package homeChallanges.string;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class StringReverse1 {
+
+	public static String reverse(String str) {
+		
+		char[] arr= str.toCharArray();
+		List<Character> l = new ArrayList<Character>();
+		
+		StringBuffer f= new StringBuffer(str);
+		return f.reverse().toString();
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(reverse("narendra"));
+		
+		
+	}
+
+}

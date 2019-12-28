@@ -1,0 +1,19 @@
+package collections.concurrent;
+
+import java.util.HashMap;
+
+public class IterateMap {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("A", "Apple");
+		hm.put("B", "Boy");
+		hm.put("C", "Cat");
+		hm.put("D", "Dog");
+		
+		//1st way
+		
+	}
+
+}

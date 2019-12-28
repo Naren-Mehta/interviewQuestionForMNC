@@ -1,0 +1,18 @@
+package homeChallanges.palindrome;
+
+public class Palindrome {
+
+	public static boolean isPalindrom(String str) {
+
+		for (int i = 0; i < str.length()/2; i++) {
+			
+		}
+
+		return false;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(isPalindrom("abba"));
+	}
+
+}

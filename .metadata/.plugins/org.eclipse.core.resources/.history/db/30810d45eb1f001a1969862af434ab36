@@ -1,0 +1,52 @@
+package fidelity;
+
+public class PingPongThreadDemo extends Thread {
+
+	static String name = "Ping";
+
+	public void run() {
+		while (true) {
+			playTurn();
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public void playTurn() {
+		synchronized (this) {
+			try {
+				if(name.equals("Ping")) {
+					System.out.println("====if==========");
+					System.out.println(name);
+					name="Pong";
+//					wait();
+				}else {
+					System.out.println("====else==========");
+
+					System.out.println(name);
+					name="Ping";
+//					notify();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	PingPongThreadDemo(String name) {
+		super(name);
+	}
+
+	public static void main(String[] args) {
+
+		PingPongThreadDemo t1 = new PingPongThreadDemo("Ping");
+		PingPongThreadDemo t2 = new PingPongThreadDemo("Pong");
+		t1.start();
+		t2.start();
+
+	}
+
+}

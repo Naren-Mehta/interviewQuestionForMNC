@@ -1,0 +1,21 @@
+package homeChallanges;
+
+public class StringReverse {
+
+	public static String reverse(String str) {
+		String rev="";
+		
+		for(char c: str.toCharArray()) {
+			rev = ch+rev;
+		}
+		
+		return rev;
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

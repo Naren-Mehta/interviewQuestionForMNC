@@ -1,0 +1,15 @@
+package homeChallanges.reverseInteger;
+
+public class ReverseInteger {
+	
+	public static void main(String[] args) {
+		
+		System.out.println(reverseInteger(51));
+		
+	}
+
+	private static int reverseInteger(int i) {
+		return null;
+	}
+
+}
